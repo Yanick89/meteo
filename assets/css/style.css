@@ -4,6 +4,8 @@ body
 	padding: 0;
 	font-family: verdana;
 	background-image: url("meteojob.png");
+	color: #333333;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -52,9 +54,20 @@ input[type=e-mail]
 {
 	display: inline-block;
 	flex-direction: column;
-	height: 20px;
+	height: 25px;
 	padding: 3px;
 	margin: 5px;
+	border: 2px solid #ccc;
+}
+
+input[type=password]
+{
+	background-image: url(oeil.png);
+	background-repeat: no-repeat;
+	background-size:25px ;
+	background-position: 98%;
+	border: 2px solid #ccc;
+	outline: 
 }
 
 .boutton_1,
@@ -69,8 +82,18 @@ input[type=e-mail]
 	margin: 2px;
 	padding: 3px;
 	width: 100px;
-	height: 50px;
+	height: 40px;
+	border: none;
+	color: #000;
+	background-color: #f2f2f2;
 }
+.boutton_1:hover, .boutton_2:hover, .boutton_3:hover, .boutton_4:hover, .boutton_5:hover, .boutton_6:hover, .boutton_7:hover
+{
+	background-color: #207cbb;
+	color: white;
+	cursor: pointer;
+}
+
 .boutton .para
 {
 	font-size: 0.9em;
@@ -81,7 +104,9 @@ input[type=e-mail]
 .last .para_1
 {
 	position: relative;
+	width: 100%;
 	top: -30px;
+	font-size: 0.9em;
 }
 
 .underline
@@ -92,13 +117,66 @@ input[type=e-mail]
 .boutton_1, .last_1
 {
 	color: #fff;
-	background-color:  #194f72
-
+	background-color: #207cbb;
 }
+
+.last
+{
+	display: flex;
+}
+
+/*bouton de bascule*/
+
+.box1
+{
+	display: flex;
+}
+
+input[type="checkbox"]
+{
+	display: none;
+}
+.box1:checked + label
+{
+	background-color: black;
+}
+
+.box1 label
+{
+	display: inline-block;
+	color: transparent;
+	border-radius: 1px;
+	height: 30px;
+	width: 50%;	
+}
+
+.box1
+{
+	position: relative;
+	top: -15px;
+	margin-left: 20px;
+	vertical-align: center;
+	background-color: #999999;
+	border-radius: 3px;
+}
+#bascule1:not(:checked) ~ .bascule_label2
+{
+	background-color: #b8c2ca;
+	color: #fff;
+}
+#bascule1:checked ~ .bascule_label
+{
+	background-color: #3498db;
+	color: #fff;
+}
+
+/*bouton de fin*/
 .last_1
 {
-	
+	position: relative;
+	margin: auto;	
+	top: -15px;
+	cursor: pointer;
 }
-
  
 
