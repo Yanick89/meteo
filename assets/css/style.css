@@ -3,15 +3,13 @@ body
 	margin: 0;
 	padding: 0;
 	font-family: verdana;
-	background-image: url("meteojob.png");
-	color: #333333;
+	background-image: url("meteo.jpg");
+	color:#24313a ;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-main
-{
-}
+/*Champs de renseignement*/
 h3
 {
 	text-align: center;
@@ -22,7 +20,7 @@ h3
 	flex-wrap: wrap;
 	border: 1px solid #000;
 	background-color: #fff;	
-	margin: 150px auto;
+	margin: 200px auto;
 	box-sizing: content-box;
 	padding: 20px;
 	width: 550px;
@@ -32,8 +30,8 @@ h3
 {
 	display: flex;
 	flex-direction: column;
-	margin: 5px;
-	padding: 5px;
+	margin: 0px;
+	padding: 10px;
 	width: 255px;
 }
 
@@ -45,7 +43,6 @@ h3
 	flex-direction: column;
 	width: 100%;
 	margin: 5px;
-
 }
 
 input[type=texte],
@@ -55,8 +52,8 @@ input[type=e-mail]
 	display: inline-block;
 	flex-direction: column;
 	height: 25px;
-	padding: 3px;
-	margin: 5px;
+	padding: 10px;
+	margin: 0px;
 	border: 2px solid #ccc;
 }
 
@@ -66,27 +63,29 @@ input[type=password]
 	background-repeat: no-repeat;
 	background-size:25px ;
 	background-position: 98%;
-	border: 2px solid #ccc;
-	outline: 
+	border: 2px solid #ccc; 
 }
+
+/*éléments à valider*/
 
 .boutton_1,
 .boutton_2,
 .boutton_3,
 .boutton_4,
 .boutton_5,
-.boutton_6,
 .boutton_7,
 .last_1
 {	
-	margin: 2px;
-	padding: 3px;
-	width: 100px;
-	height: 40px;
+	padding: 10px;
+	width: 120px;
+	height: 50px;
 	border: none;
 	color: #000;
 	background-color: #f2f2f2;
+	margin: 6px;
 }
+
+
 .boutton_1:hover, .boutton_2:hover, .boutton_3:hover, .boutton_4:hover, .boutton_5:hover, .boutton_6:hover, .boutton_7:hover
 {
 	background-color: #207cbb;
@@ -94,12 +93,14 @@ input[type=password]
 	cursor: pointer;
 }
 
+/*Texte des conditions*/
+
 .boutton .para
 {
 	font-size: 0.9em;
 	position: relative;
-	right: -220px;
-	top: -50px;
+	right: -270px;
+	top: -60px;
 }
 .last .para_1
 {
@@ -145,37 +146,41 @@ input[type="checkbox"]
 {
 	display: inline-block;
 	color: transparent;
-	border-radius: 1px;
-	height: 30px;
-	width: 50%;	
+	border-radius: 2px;
+	height: 35px;
+	width: 55%;		
 }
 
 .box1
 {
 	position: relative;
 	top: -15px;
-	margin-left: 20px;
-	vertical-align: center;
+	margin-left: 25px;
 	background-color: #999999;
 	border-radius: 3px;
 }
-#bascule1:not(:checked) ~ .bascule_label2
+#bascule1:checked ~  .bascule_label2
 {
 	background-color: #b8c2ca;
+	width: 50px;
 	color: #fff;
+	transition: 1s;
 }
-#bascule1:checked ~ .bascule_label
+
+#bascule1:not(:checked) ~ .bascule_label
 {
 	background-color: #3498db;
+	width: 50px;
 	color: #fff;
+	transition: 1s;
 }
+
 
 /*bouton de fin*/
 .last_1
 {
 	position: relative;
 	margin: auto;	
-	top: -15px;
 	cursor: pointer;
 }
  
