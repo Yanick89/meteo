@@ -92,23 +92,13 @@ input[type="password"]
 
 /*éléments à valider*/
 
-.boutton_1,
-.boutton_2,
-.boutton_3,
-.boutton_4,
-.boutton_5,
-.boutton_7,
-.last_1
-{	
-	padding: 10px;
-	width: 120px;
-	height: 60px;
-	border: none;
-	color: #000;
-	background-color: #f2f2f2;
-	margin: 6px;
+
+.boutton 
+{
+	display: flex;
+	flex-wrap: wrap;
 }
-button
+.boutton > button
 {
 	padding: 10px;
 	width: 120px;
@@ -117,19 +107,60 @@ button
 	color: #000;
 	background-color: #f2f2f2;
 	margin: 6px;
+	cursor: pointer;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .9em;
+
+}
+.boutton1
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+.boutton1 > button
+{
+	padding: 10px;
+	width: 120px;
+	height: 60px;
+	border: none;
+	color: #000;
+	background-color: #f2f2f2;
+	margin: 6px;
+	padding: 6px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .9em;
+	cursor: pointer;
+}
+.boutton > .but1
+{
+	background-color: #1f7bbb;
+	color: #fff;
 }
 
 
-.boutton_1:hover, .boutton_2:hover, .boutton_3:hover, .boutton_4:hover, .boutton_5:hover, .boutton_6:hover, .boutton_7:hover
+input[type=submit]
+{
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	word-wrap: break-word;
+}
+
+
+ .but2:hover, .but3:hover, .but4:hover, .but5:hover, .but6:hover, .but7:hover
 {
 	background-color: #207cbb;
 	color: white;
 	cursor: pointer;
 }
+.but1:hover
+{
+	background-color: #f2f2f2;
+	color: #000; 
+}
 
 /*Texte des conditions*/
 
-.boutton .para
+.last .para
 {
 	font-size: 0.9em;
 	position: relative;
@@ -159,6 +190,7 @@ button
 .last
 {
 	display: flex;
+	margin: 20px;
 }
 
 /*bouton de bascule*/
@@ -174,22 +206,23 @@ input[type="checkbox"]
 }
 
 
-.box1 label
+.box1 > label
 {
-	display: inline-block;
+	display: flex;
 	color: transparent;
 	border-radius: 2px;
 	height: 35px;
-	width: 55%;	
+	width: 55%;
+	justify-content: center;
+	align-items: center;	
 	cursor: pointer;	
 }
 
 .box1
 {
 	position: relative;
-	top: -15px;
 	margin-left: 25px;
-	background-color: #999999;
+	background-color: #eff4f7;
 	border-radius: 3px;
 }
 #bascule1:checked ~  .bascule_label2
@@ -208,13 +241,6 @@ input[type="checkbox"]
 	transition: transform  250ms;
 }
 
-.bascule_label
-{
-	position: relative;
-	margin: auto;
-}
-
-
 /*bouton de fin*/
 .last_1
 {
@@ -222,6 +248,9 @@ input[type="checkbox"]
 	margin: auto;	
 	cursor: pointer;
 	font-size: 1em; 
+	height: 50px;
+	width: 25%;
+	border: none;
 }
  
 
